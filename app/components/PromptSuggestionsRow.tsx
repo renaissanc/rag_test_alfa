@@ -2,10 +2,9 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick }) => {
     const prompts = [
-        "Who is head of racing for Aston Martin's F1 Academy team?",
-        "Who is the highest payed f1 driver?",
-        "Who will be the newest driver for Ferrari?",
-        "Who is the current Formula One World Driver's Champion?"
+        "What are the most popular courses or programs offered at THWS?",
+        "What resources and support systems are available for international students?",
+        "What is student life like on campus?"
     ]
 
     return(
