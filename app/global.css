@@ -1,5 +1,7 @@
+/* General styling */
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,25 +11,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-image: url("assets/background.avif"); */
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    color: #f0f0f0;
 }
 
 main {
-    width: 80vw;
-    height: 80vh;
-    background: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
-    border-radius: 15px;
+    width: 70vw; /* More premium ratio */
+    height: 75vh;
+    background: linear-gradient(145deg, #1e1e1e, #292929);
+    border-radius: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    color: #383838;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 section {
     width: 100%;
+    color: #dcdcdc;
 }
 
 section.populated {
@@ -35,94 +39,119 @@ section.populated {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .starter-text {
-    padding: 0 80px;
+    padding: 0 60px;
 }
 
 form {
-    height: 50px;
+    height: auto;
     width: 100%;
     display: flex;
-    border-top: #828282 solid 2px;
-    padding-top: 20px;
-    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #333;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
     overflow: hidden;
+    background-color: #1f1f1f;
 }
 
 input.question-box {
-    width: 85%;
-    padding: 10px;
-    font-size: 15px;
-    color: #383838;
-    border: none;
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+    color: #f0f0f0;
+    background: #292929;
+    border: 1px solid #444;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-input[type=submit]{
-    width: 15%;
+input[type=submit] {
+    width: 10%;
     padding: 10px;
-    font-size: 15px;
+    font-size: 14px;
     border: none;
     color: #fff;
-    background-color: #411b81;
+    background: linear-gradient(145deg, #5a2ea6, #411b81);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(145deg, #6c39bd, #50319b);
 }
 
 input:focus {
     outline: none;
+    border-color: #5a2ea6;
 }
 
 .bubble {
-    margin: 8px;
-    padding: 8px;
-    font-size: 15px;
+    margin: 10px;
+    padding: 12px;
+    font-size: 16px;
     border: none;
-    color: #383838;
-    box-shadow: #959da533 0 8px 24px;
-    width: 80%;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 75%;
     text-align: left;
 }
 
 .bubble.user {
     border-radius: 20px 20px 0 20px;
-    background-color: #E1F4FFFF;
+    background-color: #2b2b2b;
     margin-left: auto;
 }
 
 .bubble.assistant {
-    background-color: #dce7ff;
+    background-color: #333;
     border-radius: 20px 20px 20px 0;
 }
 
 .prompt-suggestion-row {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .prompt-suggestion-button {
     margin: 8px;
-    padding: 8px;
+    padding: 10px 16px;
     font-size: 15px;
     border: none;
-    background-color: #fff;
-    border-radius: 10px;
-    color: #383838;
-    box-shadow: #959da533 0 8px 24px;
+    background: #292929;
+    border-radius: 12px;
+    color: #dcdcdc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.prompt-suggestion-button:hover {
+    background: #3c3c3c;
 }
 
 .loader {
     margin: 10px;
     width: 60px;
     aspect-ratio: 4;
-    background:
-            no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 0% 50%,
-            no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 50% 50%,
-            no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 100% 50%;
+    background: no-repeat radial-gradient(circle closest-side, #5a2ea6 90%, #0000) 0% 50%,
+    no-repeat radial-gradient(circle closest-side, #5a2ea6 90%, #0000) 50% 50%,
+    no-repeat radial-gradient(circle closest-side, #5a2ea6 90%, #0000) 100% 50%;
     background-size: calc(100% / 3) 100%;
     animation: loading 1s infinite linear;
 }
 
-@keyframes loading{
+@keyframes loading {
     33% {background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;}
     50% {background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;}
     66% {background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;}
