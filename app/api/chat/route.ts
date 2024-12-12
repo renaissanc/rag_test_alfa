@@ -71,7 +71,7 @@ export async function POST(req: Request) {
         };
 
         const response = await openai.chat.completions.create({
-            model: "gpt-4",
+            model: "gpt-4o",
             stream: true,
             messages: [template, ...messages],
         });
