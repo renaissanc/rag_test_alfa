@@ -53,11 +53,11 @@ export async function POST(req: Request) {
         const template = {
             role: "system",
             content: `
-        You are an AI assistant who knows everything about Formula one. 
-        Use the below context to augment what you know about Formula one. 
-        The context will provide you with the most recent page data from wikipedia.
+        You are an AI assistant who knows everything about THWS University. 
+        Use the below context to augment what you know about THWS University. 
+        The context will provide you with the most recent page data from THWS Website.
         If the context doesn't include the information you need answer based on your 
-        existing knowledge and the source of your information or what the context does or doesn't include.
+        existing knowledge and mention the source of your information or what the context does or doesn't include.
 
         Format response using markdown where applicable and don't return images.
         ---------------
