@@ -2,9 +2,9 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick }) => {
     const prompts = [
-        "What are the most popular courses or programs offered at THWS?",
-        "What resources and support systems are available for international students?",
-        "What is student life like on campus?"
+        "Whom should I contact if I want to transfer credits from my previous studies?",
+        "Can I get financial support for my stay abroad?",
+        "Do I need a language certificate when studying abroad?"
     ]
 
     return(
