@@ -3,6 +3,8 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 import { DataAPIClient } from "@datastax/astra-db-ts";
 // import { openai2 } from '@ai-sdk/openai';
 
+
+
 const {
     ASTRA_DB_API_ENDPOINT,
     ASTRA_DB_APPLICATION_TOKEN,
@@ -11,10 +13,10 @@ const {
     OPENAI_API_KEY,
 } = process.env;
 
-const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+const openai = new OpenAI({ apiKey: OPENAI_API_KEY });  //OPENAI_API_KEY
 
 const client = new DataAPIClient(ASTRA_DB_APPLICATION_TOKEN);
-const db = client.db(ASTRA_DB_API_ENDPOINT, { namespace: ASTRA_DB_NAMESPACE });
+const db = client.db(ASTRA_DB_API_ENDPOINT, { namespace: ASTRA_DB_NAMESPACE });  //ASTRA_DB_API_ENDPOINT, ASTRA_DB_NAMESPACE
 
 export async function POST(req: Request) {
     try {
@@ -30,7 +32,7 @@ export async function POST(req: Request) {
         });
 
         try {
-            const collection = await db.collection(ASTRA_DB_COLLECTION);
+            const collection = await db.collection(ASTRA_DB_COLLECTION); //ASTRA_DB_COLLECTION
             const cursor = collection.find(null, {
                 sort: {
                     $vector: embedding.data[0].embedding,
@@ -44,7 +46,8 @@ export async function POST(req: Request) {
 
             docContext = JSON.stringify(docsMap);
         } catch (err) {
-            throw err
+            console.log(err)
+            docContext=""
         }
 
         const template = {
@@ -54,7 +57,7 @@ export async function POST(req: Request) {
         Use the below context to augment what you know about Formula one. 
         The context will provide you with the most recent page data from wikipedia.
         If the context doesn't include the information you need answer based on your 
-        existing knowledge and don't mention the source of your information or what the context does or doesn't include.
+        existing knowledge and the source of your information or what the context does or doesn't include.
 
         Format response using markdown where applicable and don't return images.
         ---------------
@@ -68,7 +71,7 @@ export async function POST(req: Request) {
         };
 
         const response = await openai.chat.completions.create({
-            model: "gpt-4o",
+            model: "gpt-4",
             stream: true,
             messages: [template, ...messages],
         });
