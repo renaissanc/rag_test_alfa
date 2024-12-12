@@ -63,35 +63,3 @@ const Home = () => {
 
 export default Home;
 
-
-//const Home = () => {
-
-  //  const noMessages = true
-
-    //return (
-      //  <main>
-        //    <Image src={f1GPTLogo} width="250" alt="F1GPT Logo"/>
-          //  <section className={noMessages ? "" : "populated"}>
-            //    {noMessages ? (
-              //      <>
-                //        <p className="starter-text">
-                  //          Welcome to F1 GPT! Ask me anything about Formula 1 and I'll do my
-                    //        best to help you.
-                      //  </p>
-                        //<br/>
-                //        <PromptSuggestionRow onPromptClick={handlePrompt}/>
-                  //  </>
-               // ) : (
-                   // <>
-                 //       {messages.map((message, index) => (
-               //             <Bubble key={`message-${index}`} message={message}/>
-             //           ))}
-           //             {isLoading && <LoadingBubble/>}
-         //           </>
-       //         )}
-     //       </section>
-   //     </main>
- //   )
-//}
-
-//export default Home
