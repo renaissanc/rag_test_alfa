@@ -1,8 +1,8 @@
 import "./global.css"
 
 export const metadata = {
-    title: "F1GPT",
-    description: "formula 1 data"
+    title: "THWS University",
+    description: "THWS University Data"
 }
 
 const RootLayout = ({children}) => {
