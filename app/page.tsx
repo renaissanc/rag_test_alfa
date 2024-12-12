@@ -28,12 +28,12 @@ const Home = () => {
     };
     return (
         <main>
-            <Image src={f1GPTLogo} width="250" alt="F1 GPT Logo" />
+            <Image src={f1GPTLogo} width="250" alt="THWS Student" />
             <section className={noMessages ? "" : "populated"}>
                 {noMessages ? (
                     <>
                         <p className="starter-text">
-                            Welcome to F1 GPT! Ask me anything about Formula 1 and I will do my
+                            Welcome to THWS GPT! Ask me anything about THWS University and I will do my
                             best to help you.
                         </p>
                         <br />
@@ -53,7 +53,7 @@ const Home = () => {
                     className="question=box"
                     onChange={handleInputChange}
                     value={input}
-                    placeholder="Ask me ..."
+                    placeholder="How can I help you? :)"
                 />
                 <input type="submit" />
             </form>
@@ -63,3 +63,35 @@ const Home = () => {
 
 export default Home;
 
+
+//const Home = () => {
+
+  //  const noMessages = true
+
+    //return (
+      //  <main>
+        //    <Image src={f1GPTLogo} width="250" alt="F1GPT Logo"/>
+          //  <section className={noMessages ? "" : "populated"}>
+            //    {noMessages ? (
+              //      <>
+                //        <p className="starter-text">
+                  //          Welcome to F1 GPT! Ask me anything about Formula 1 and I'll do my
+                    //        best to help you.
+                      //  </p>
+                        //<br/>
+                //        <PromptSuggestionRow onPromptClick={handlePrompt}/>
+                  //  </>
+               // ) : (
+                   // <>
+                 //       {messages.map((message, index) => (
+               //             <Bubble key={`message-${index}`} message={message}/>
+             //           ))}
+           //             {isLoading && <LoadingBubble/>}
+         //           </>
+       //         )}
+     //       </section>
+   //     </main>
+ //   )
+//}
+
+//export default Home
