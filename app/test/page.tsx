@@ -1,6 +1,12 @@
+import React from 'react';
 
-export default function page(){
-    return (
-        <div>THWS GPT was created by a skilled data analyst and a dedicated, talented computer scientist and physicist, Murtaza ali, who aspires to make a meaningful impact in the business world.</div>
-    )
-}
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <p>This is HTML syntax in a TypeScript file.</p>
+    </div>
+  );
+};
+
+export default App;
