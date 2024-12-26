@@ -6,6 +6,12 @@ const App: React.FC = () => {
       <h1>Hello, World!</h1>
       <p>This is HTML syntax in a TypeScript file.</p>
       <p>
+
+
+
+                  
+      </p>
+      <p>
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
@@ -345,6 +351,7 @@ const App: React.FC = () => {
         What is Business Intelligence?
         1 // Business Intelligence I / The Idea Behind Business Intelligence
       </p>
+      
     </div>
   );
 };
