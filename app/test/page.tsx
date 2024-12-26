@@ -4,14 +4,13 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>Hello, World!</h1>
-      <p>This is HTML syntax in a TypeScript file.</p>
+      
       <p>
 
 
 
                   
-      </p>
-      <p>
+      
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
@@ -179,8 +178,11 @@ const App: React.FC = () => {
         9. Strategy, Organisation, and Governance
         10. Trends, Limitations, and Challenges
         Business Intelligence / Overview
-      </p>
-      <p>Prof. Dr. Bernd Knobloch
+      
+
+
+                        
+        Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
         24
@@ -350,8 +352,13 @@ const App: React.FC = () => {
         BUSINESS INTELLIGENCE
         What is Business Intelligence?
         1 // Business Intelligence I / The Idea Behind Business Intelligence
-      </p>
-      <P>
+
+
+
+
+
+
+                            
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         13
@@ -854,8 +861,12 @@ const App: React.FC = () => {
         Schildhauer, T.; Grothe, M.; Braun, M.; Schultze, M (Hrsg.) (2004): Business Intelligence. Durch
         eBusiness Strategien und Prozesse verbessern, o.O. (Business Village). In German.
         1 // Business Intelligence I / The Idea Behind Business Intelligence
-      </P>
-      <p>
+
+
+
+
+
+                      
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         DATA TRANSFORMATIONS
@@ -908,8 +919,11 @@ const App: React.FC = () => {
         Shift
         Quarter/Fisc. Year
         Discount Discount Type
-      </p>
-      <p>
+
+
+
+
+                      
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
@@ -1266,8 +1280,13 @@ const App: React.FC = () => {
         n=500 mid/senior managers
         of very large companies (1,000+ emp.)
         from UK, France, Germany, Italy, and Spain.
-      </p>
-      <p>
+
+
+
+
+
+
+                             
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         23
@@ -1887,8 +1906,10 @@ const App: React.FC = () => {
         2 // Business Intelligence I / Architectures for Business Intelligence Systems
         Stockinger, K.; Stadelmann, T.: Data Science für Lehre, Forschung und Praxis. In: HMD 51 (2014),
         pp. 469-479. In German. 
-      </p>
-      <p>
+
+
+
+                          
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         6
@@ -1926,8 +1947,10 @@ const App: React.FC = () => {
         Ex.: Conviction that a product should be
         discontinued, if the rate of positive
         customer ratings is continually below x%. 
-      </p>
-      <p>
+
+
+
+                       
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         3 // Business Intelligence I / Data Integration 21
@@ -1951,8 +1974,10 @@ const App: React.FC = () => {
          Cloud-based data integration does not relieve the data integration dilemma –
         it rather aggravates it (more sources can be connected more easily).
         Why should we pre-calculate business metrics? 
-      </p>
-      <p>
+
+
+
+                     
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         3 // Business Intelligence I / Data Integration 24
@@ -1990,8 +2015,10 @@ const App: React.FC = () => {
         unallowed values
         39!
         What does data heterogeneity mean in particular? 
-      </p>
-      <p>
+
+
+
+                           
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
@@ -2613,8 +2640,10 @@ const App: React.FC = () => {
         Integration verteilter und heterogener Datenquellen. Heidelberg (dpunkt). In German.
         Müller, R.M.; Lenz, H.-J. (2013): Business Intelligence. Berlin (Springer Vieweg). In German.
         3 // Business Intelligence I / Data Integration
-      </p>
-      <p>
+
+
+
+                            
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         20
@@ -3345,8 +3374,10 @@ const App: React.FC = () => {
         In just 12 months, MultiCare was able to reduce septicemia mortality rates by an average of 22 percent, leading
         to more than $1.3 million in validated cost savings during that time period. The sepsis cost reductions and quality of care improvements have raised the expectation that similar results can be realised in other areas as well.
         (Adapted from Sharda et al. (2014), pp. 71f.)
-      </p>
-      <p>
+
+
+
+                             
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         28
@@ -3663,8 +3694,10 @@ const App: React.FC = () => {
         Security Mature (database technology) Crude ; many open issues
         Users Functional users, analysts, managers Mostly data scientists
         Flexibility Restricted by schema Late structuring enables flexibility 
-      </p>
-      <p>
+
+
+
+                         
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         41
@@ -4126,8 +4159,10 @@ const App: React.FC = () => {
         1 : 1
         M : N
         (1,*) (0,*)
-      </p>
-      <p>
+
+
+
+                        
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         48
@@ -4163,8 +4198,10 @@ const App: React.FC = () => {
         disappear with all
         related information.
         Redundancies
-      </p>
-      <p>
+
+
+
+                         
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         58
@@ -5056,8 +5093,11 @@ const App: React.FC = () => {
         Weiler, T. (2019): Datenseen in der BI-Landschaft. Data Lake und Data Warehouse – Konkurrenz
         oder Ergänzung? In: BI-Spektrum (2019) 3, pp. 38-41. In German.
         4 // Business Intelligence I / Data Storage 
-      </p>
-      <p>
+
+
+
+
+                            
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         DATA ANALYSIS –
@@ -5573,8 +5613,11 @@ const App: React.FC = () => {
         Analytical Panel
         Tables/Charts
         Comments
-      </p>
-      <p>
+
+
+
+
+                        
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         VISUALISATION
@@ -5597,8 +5640,11 @@ const App: React.FC = () => {
         927979709723097230979592750927279798734972608027
         Few (2006), p. 126.
         Few (2006), p. 82.
-      </p>
-      <p>
+
+
+
+
+                           
         Prof. Dr. Bernd Knobloch
         Business Intelligence
         26
