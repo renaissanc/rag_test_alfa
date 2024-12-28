@@ -58,6 +58,7 @@ const Home = () => {
                 />
                 <input type="submit" />
             </form>
+            <Analytics />
         </main>
     );
 };
