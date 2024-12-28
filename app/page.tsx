@@ -6,6 +6,7 @@ import { Message } from "ai"
 import Bubble from "./components/Bubble";
 import LoadingBubble from "./components/LoadingBubble";
 import PromptSuggestionRow from "./components/PromptSuggestionsRow";
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
     const {
