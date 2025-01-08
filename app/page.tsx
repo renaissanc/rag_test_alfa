@@ -60,7 +60,7 @@ const Home = () => {
                     </>
                 )}
             </section>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}
                 style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '20px'}}>
                 <input
                     className="question-box"
