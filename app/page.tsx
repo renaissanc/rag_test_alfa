@@ -29,6 +29,71 @@ const Home = () => {
     };
     return (
         <main>
+
+            <Image src={GPTLogo} width="250" alt="THWS Student"/>
+            <section className={noMessages ? "" : "populated"}>
+                {noMessages ? (
+                    <>
+                        <p className="starter-text">
+                            Welcome to THWS GPT! Ask me anything about THWS University and I will do my
+                            best to help you.
+                        </p>
+                        <br/>
+                        <PromptSuggestionRow onPromptClick={handlePrompt}/>
+                    </>
+                ) : (
+                    <>
+                        <div
+                            className="message-container"
+                            style={{
+                                flex: 1,
+                                overflowY: "auto",
+                                maxHeight: "100%", // Ensures the container is scrollable within its parent
+                                padding: "10px",
+                            }}
+                        >
+                            {messages.map((message, index) => (
+                                <Bubble key={`message-${index}`} message={message}/>
+                            ))}
+                        </div>
+                        {isLoading && <LoadingBubble/>}
+                    </>
+                )}
+            </section>
+            <form onSubmit={handleSubmit}
+                  style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '20px'}}>
+                <input
+                    className="question-box"
+                    onChange={handleInputChange}
+                    value={input}
+                    placeholder="How can I help you? :)"
+                    style={{
+                        flex: '1', // Makes the input bar expand to fill available space
+                        padding: '10px',
+                        fontSize: '16px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                    }}
+                />
+                <input
+                    type="submit"
+                    value="Send"
+                    style={{
+                        padding: '10px 20px',
+                        fontSize: '16px',
+                        backgroundColor: '#007BFF',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '5px',
+                        cursor: 'pointer',
+                    }}
+                />
+            </form>
+
+            
+
+
+            {/*
             <Image src={GPTLogo} width="250" alt="THWS Student" />
             <section className={noMessages ? "" : "populated"}>
                 {noMessages ? (
@@ -59,6 +124,7 @@ const Home = () => {
                 <input type="submit" />
             </form>
             <Analytics />
+        */}
         </main>
     );
 };
