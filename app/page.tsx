@@ -61,11 +61,19 @@ const Home = () => {
                 )}
             </section>
             <form onSubmit={handleSubmit}>
+                style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '20px'}}>
                 <input
-                    className="question=box"
+                    className="question-box"
                     onChange={handleInputChange}
                     value={input}
                     placeholder="How can I help you? :)"
+                    style={{
+                        flex: '1', // Makes the input bar expand to fill available space
+                        padding: '10px',
+                        fontSize: '16px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                    }}
                 />
                 <input type="submit" />
             </form>
