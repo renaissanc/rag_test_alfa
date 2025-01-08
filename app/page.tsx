@@ -75,7 +75,19 @@ const Home = () => {
                         borderRadius: '5px',
                     }}
                 />
-                <input type="submit" />
+                <input
+                    type="submit"
+                    value="Send"
+                    style={{
+                        padding: '10px 20px',
+                        fontSize: '16px',
+                        backgroundColor: '#007BFF',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '5px',
+                        cursor: 'pointer',
+                    }}
+                />
             </form>
             <Analytics />
         
