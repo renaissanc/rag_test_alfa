@@ -43,9 +43,19 @@ const Home = () => {
                     </>
                 ) : (
                     <>
-                        {messages.map((message, index) => (
-                            <Bubble key={`message-${index}`} message={message} />
-                        ))}
+                        <div
+                            className="message-container"
+                            style={{
+                                flex: 1,
+                                overflowY: "auto",
+                                maxHeight: "100%", // Ensures the container is scrollable within its parent
+                                padding: "10px",
+                            }}
+                        >
+                            {messages.map((message, index) => (
+                                <Bubble key={`message-${index}`} message={message}/>
+                            ))}
+                        </div>
                         {isLoading && <LoadingBubble />}
                     </>
                 )}
